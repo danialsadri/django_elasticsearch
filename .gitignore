@@ -2,3 +2,14 @@ venv/
 .idea/
 static/
 media/
+
+*/__pycache__/
+*/*/__pycache__/
+*.sqlite3
+.idea
+*/.idea
+.idea/*
+.idea/workspace.xml
+__pycache__
+.idea/*/*
+*.mo
