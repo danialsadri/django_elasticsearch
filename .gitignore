@@ -2,10 +2,9 @@ venv/
 .idea/
 static/
 media/
-
+db.sqlite3
 */__pycache__/
 */*/__pycache__/
-*.sqlite3
 .idea
 */.idea
 .idea/*
