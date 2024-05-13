@@ -10,6 +10,10 @@ LOCAL_APPS = [
     'home.apps.HomeConfig',
 ]
 
+THIRD_PARTY_APPS = [
+    'django_elasticsearch_dsl',
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -18,6 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     *LOCAL_APPS,
+    *THIRD_PARTY_APPS,
 ]
 
 MIDDLEWARE = [
@@ -70,7 +75,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 ELASTICSEARCH_DSL = {
     'default': {
-        'hosts': 'localhost:9200',
+        'hosts': 'http://localhost:9200',
     }
 }
 
